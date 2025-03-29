@@ -22,12 +22,13 @@ async def initialize_rag():
     rag = LightRAG(
         working_dir=WORKING_DIR,
         llm_model_func=ollama_model_complete,
-        llm_model_name="gemma2:2b",
+        #llm_model_name="gemma2:2b",
+        llm_model_name="deepseek-r1:1.5b",
         llm_model_max_async=4,
-        llm_model_max_token_size=32768,
+        llm_model_max_token_size=32000,
         llm_model_kwargs={
             "host": "http://localhost:11434",
-            "options": {"num_ctx": 32768},
+            "options": {"num_ctx": 32000},
         },
         embedding_func=EmbeddingFunc(
             embedding_dim=768,
@@ -54,7 +55,9 @@ def main():
     rag = asyncio.run(initialize_rag())
 
     # Insert example text
-    with open("./book.txt", "r", encoding="utf-8") as f:
+    with open("./book.txt", "r", 
+              #encoding="utf-8"
+              ) as f:
         rag.insert(f.read())
 
     # Test different query modes

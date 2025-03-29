@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ascii_colors
+Version: 0.5.2
+Summary: A Python library for pretty console printing with colors and styles
+Home-page: https://github.com/ParisNeo/console_tools
+Author: Saifeddine ALOUI (ParisNeo)
+Author-email: aloui.saifeddine@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+License-File: LICENSE
+
+A Python library for displaying text on the console with colors, styles, and exception handling.
